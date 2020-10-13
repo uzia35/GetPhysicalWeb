@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Get Physical <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <div *ngIf="!userInfo" class="login-container">
+            <div class="login-button">
+                <app-login></app-login>
+            </div>
+            <div class="signup-button">
+                <app-registration></app-registration>
+            </div>
+        </div>
+        <div *ngIf="userInfo" class="userInfo">Welcome {{ userInfo.name }} </div>
+    </div>
+</nav>
+<app-human></app-human>

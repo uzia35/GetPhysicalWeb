@@ -1,0 +1,17 @@
+.login-container {
+    width: 20%;
+}
+
+.login-button {
+    float: left;
+    width: 45%;
+}
+
+.signup-button {
+    float: right;
+    width: 45%;
+}
+
+.userInfo {
+    color: #fff;
+}
